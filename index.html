@@ -60,7 +60,7 @@
   timeText.textContent = timeLeft;
 
   if (timeLeft <= 0) {
-    clearInterval(timer); // 🔴 esto detiene el intervalo
+    clearInterval(timer); 
     alert("Tiempo terminado! Puntos: " + score);
     location.reload();
   }
