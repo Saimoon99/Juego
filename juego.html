@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Juego</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #gameArea {
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+      margin: auto;
+      position: relative;
+    }
+    #btn {
+      position: absolute;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Atrapá el botón</h1>
+<p>Puntos: <span id="score">0</span></p>
+<p>Tiempo: <span id="time">10</span></p>
+
+<div id="gameArea">
+  <button id="btn">Click!</button>
+</div>
+<button id="restart" style="display:none;">Reintentar</button>
+<script>
+  let score = 0;
+  let timeLeft = 10;
+
+  const btn = document.getElementById("btn");
+  const scoreText = document.getElementById("score");
+  const timeText = document.getElementById("time");
+  const gameArea = document.getElementById("gameArea");
+
+  function moveButton() {
+    const x = Math.random() * (gameArea.clientWidth - 80);
+    const y = Math.random() * (gameArea.clientHeight - 40);
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
+  }
+
+  btn.addEventListener("click", () => {
+    score++;
+    scoreText.textContent = score;
+    moveButton();
+  });
+
+  function countdown() {
+  timeLeft--;
+  timeText.textContent = timeLeft;
+
+  if (timeLeft <= 0) {
+    clearInterval(timer); // 🔴 esto detiene el intervalo
+    alert("Tiempo terminado! Puntos: " + score);
+    location.reload();
+  }
+}
+
+  moveButton();
+  let timer = setInterval(countdown, 1000);
+</script>
+
+</body>
+</html>
