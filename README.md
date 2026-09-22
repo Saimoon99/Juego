@@ -23,5 +23,4 @@ Un minijuego interactivo a contrarreloj donde los jugadores ponen a prueba sus r
 ## Instalación y uso
 
 1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/Saimoon99/Juego.git](https://github.com/Saimoon99/Juego.git)
+  git clone https://github.com/Saimoon99/Juego.git
