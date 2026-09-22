@@ -24,4 +24,4 @@ Un minijuego interactivo a contrarreloj donde los jugadores ponen a prueba sus r
 
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/atrapa-el-boton.git](https://github.com/tu-usuario/atrapa-el-boton.git)
+   git clone [https://github.com/Saimoon99/Juego.git](https://github.com/Saimoon99/Juego.git)
