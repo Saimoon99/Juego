@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./juego.gif" alt="Demostración del juego" width="500px">
+</p>
+
 # Atrapa el Botón 
 
 Un minijuego interactivo a contrarreloj donde los jugadores ponen a prueba sus reflejos intentando hacer clic en un botón que se mueve antes de que el tiempo se agote.
